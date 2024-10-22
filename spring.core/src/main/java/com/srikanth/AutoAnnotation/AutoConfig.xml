@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context 
+           http://www.springframework.org/schema/context/spring-context.xsd">
+
+<context:annotation-config/>
+	<bean class="com.srikanth.AutoAnnotation.Address" name="address">
+		<property name="city" value="warangal" />
+		<property name="village" value="kareemabad" />
+	</bean>
+	<bean class="com.srikanth.AutoAnnotation.Address" name="address1">
+		<property name="city" value="hyderabad" />
+		<property name="village" value="kphb" />
+	</bean>
+<!-- byName  reference name matching with emp ref variable -->
+<!-- bytype reference type matching with class name  -->
+	<bean class="com.srikanth.AutoAnnotation.Emp" name="emp">
+		<property name="empId" value="100" />
+	</bean> 
+
+</beans>

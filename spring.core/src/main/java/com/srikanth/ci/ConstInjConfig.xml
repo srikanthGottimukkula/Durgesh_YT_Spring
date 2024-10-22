@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean class="com.srikanth.ci.Address" name="addressRef">
+		<constructor-arg value="sri" />
+		<constructor-arg value="warangal"  type="String"/>
+	</bean>
+	<bean class="com.srikanth.ci.Person" name="person">
+		<constructor-arg value="12" />
+		<constructor-arg value="srikanth" />
+		<constructor-arg ref="addressRef" />
+	</bean>
+	<!-- By using index and order we reduse the ambiguity problem!! -->
+	<bean class="com.srikanth.ci.Addition" name="adition" >
+	<constructor-arg value="23" index="1"/>
+	<constructor-arg value="30" index="0"/>
+	</bean>
+
+
+</beans>

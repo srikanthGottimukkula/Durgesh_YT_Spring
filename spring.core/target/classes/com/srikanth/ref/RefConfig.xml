@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<!-- 	<bean class="com.srikanth.ref.Y" name="refY">
+		<property name="y" value="7" />
+	</bean>
+	<bean class="com.srikanth.ref.X" name="refX" p:x="66" p:y-ref="refY"/> -->
+	<!-- 	<property name="x" value="3" />
+		<property name="y">
+			<ref bean="refY"></ref>
+		</property> -->
+
+
+<!-- 	</bean> -->
+<bean class="com.srikanth.ref.Y" name="refY" p:y="99"/>
+<bean class="com.srikanth.ref.X" name="refX" p:x="00" p:y-ref="refY"></bean>
+
+
+
+</beans>

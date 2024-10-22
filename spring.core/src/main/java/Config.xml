@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean class="com.srikanth.spring.Student" 
+	name="studentObject"
+	 p:stdId="1234" p:stdName="srikanth" p:stdAddress="warangal" />
+	<bean class="com.srikanth.spring.Student" 
+	name="studentObject1"
+	 p:stdId="9876" p:stdName="abhiram" p:stdAddress="hyderabad" />
+	<!-- <property name="stdId"> <value>100</value> </property> <property name="stdName"> 
+		<value>srikanth</value> </property> <property name="stdAddress"> <value>warangal</value> 
+		</property> -->
+<!-- </bean> -->
+
+</beans>
